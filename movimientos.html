@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/movimientos.css" />
+    <title>Ingreso</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1 id="ingreso">Movimientos</h1>
+      </header>
+      <nav id="navegacion">
+        <div>
+          <button type="button" id="Consignar" onclick="irConsignar()">
+            Consignar
+          </button>
+        </div>
+        <div>
+          <button type="button" id="sacar" onclick="irRetirar()">
+            Sacar Plata
+          </button>
+        </div>
+        <div>
+          <button type="button" id="saldo" onclick="irSaldo()">
+            Consultar Saldo
+          </button>
+        </div>
+        <div id="cambiar-clave">
+          <button type="button" id="cambiar-clave" onclick="irCambiarClave()">
+            Cambiar Clave
+          </button>
+        </div>
+      </nav>
+      <main id="contenedor_padre">
+        <div>
+          <h2>Sus ultimos movimientos</h2>
+          <div>
+            <button type="button" id="Movimientos" onclick="movimientos()">
+              Consultar movimientos
+            </button>
+          </div>
+          <a href="/index2.html">Salir</a>
+          <div id="contenedor-tabla"></div>
+        </div>
+
+        <div>
+          <p></p>
+        </div>
+      </main>
+      <footer>
+        <div class="contenedor">
+          <div>
+            <ul>
+              <li>Daniel Builes</li>
+              <li>Andrea Chavarriaga</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>Grupo: Martes 6:15pm</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/danielbuilesg/"
+                  ><img src="./img/icono2.jpg" alt="Instagram"</a
+                >
+              </li>
+              <li>
+                <a href=""><img src="./img/icono2.jpg" alt="Instagram"</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>Daniel Builes Gomez</li>
+              <li>Andrea Chavarriaga M</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/cajero.js"></script>
+  </body>
+</html>

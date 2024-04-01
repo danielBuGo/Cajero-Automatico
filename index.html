@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cajero automatico</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="registro">Bienvenido a Mi Plata</h1>
+    </header>
+
+    <nav id="navegacion">
+      <p>Si ya tienes cuenta con nosotros, dale Click ==></p>
+      <a href="./index2.html">Ingresar</a>
+    </nav>
+
+    <main>
+      <form action="" id="formulario">
+        <div>
+          <label for="decumento_id">
+            <p>Cedula</p>
+            <input
+              type="number"
+              id="cedula_input"
+              placeholder="ingrese ID"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label for="nombre-usuario">
+            <p>Usuario</p>
+            <input
+              type="text"
+              id="usuario_input"
+              placeholder="Nombre"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label for="email">
+            <p>Correo electronico</p>
+            <input type="email" id="email_input" placeholder="email" required />
+          </label>
+        </div>
+        <div>
+          <label for="contraseña">
+            <p>Clave</p>
+            <input
+              type="password"
+              id="password_input"
+              placeholder="password"
+              minlength="7"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label for="confirmar_clave">
+            <p>Confirmar clave</p>
+            <input
+              type="password"
+              id="confirmar_input"
+              placeholder="Confirmar"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <button
+            type="submit"
+            value="Guardar"
+            id="enviar"
+            onclick="guardarDatos()"
+          >
+            Guardar
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="contenedor">
+        <div>
+          <ul>
+            <li>Daniel Builes</li>
+            <li>Andrea Chavarriaga</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>Grupo: Martes 6:15pm</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/danielbuilesg/"
+                ><img src="./img/icono2.jpg" alt="Instagram"</a
+              >
+            </li>
+            <li><a href=""><img src="./img/icono2.jpg" alt="Instagram"</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li>Daniel Builes Gomez</li>
+            <li>Andrea Chavarriaga M</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/cajero.js"></script>
+  </body>
+</html>
